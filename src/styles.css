@@ -63,3 +63,34 @@ section {
     position: relative;
     overflow: hidden;
 }
+
+.card-membros img {
+    border-radius: 50%;
+}
+
+h1 {
+    font-size: xx-large;
+}
+
+.social-icon {
+    font-size: 36px; 
+    transition: transform 0.3s ease-in-out;
+}
+
+a:hover .fa,
+a:hover .fab {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    color: #FC8621;
+}
+
+
+
+
+footer {
+    display: grid;
+    place-items: center;
+    padding: 1%;
+    opacity: 70%;
+}
