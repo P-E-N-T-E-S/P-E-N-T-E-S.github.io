@@ -156,12 +156,12 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 18rem;
+    width: 14rem;
     height: 24rem;
     border-radius: 0.75rem;
     margin: 1rem;
     background-color: #682C0E;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;  
 }
 
 .membros-card img {
@@ -177,6 +177,9 @@ section {
 
 .membros-card-info {
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     top: 60%;
     background: transparent;
 }
@@ -186,6 +189,38 @@ section {
     background-color: transparent;
 }
 
+.membros-social {
+    background: transparent;
+}
+.membros-social-icon {
+    background: transparent;
+    background-color: transparent;
+    font-size: 2rem; 
+    transition: transform 0.3s ease-in-out;
+}
+.membros-social .fa,
+.membros-social .fab {
+    background-color: transparent;
+    color:beige;
+}
+
+.btn {
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 3px;
+    padding: 12px 24px;
+    border: 0;
+    color: #3a4149;
+    background: #e7ebee;
+    line-height: 1.15;
+    font-size: 16px;
+    :hover {
+        transition: all .1s ease;
+        box-shadow: 0 0 0 0 #fff, 0 0 0 3px #FC8621;
+    }
+}
 
 h1 {
     font-size: xx-large;
