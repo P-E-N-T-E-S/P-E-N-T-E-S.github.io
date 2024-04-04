@@ -3,9 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const navLinks = document.querySelectorAll('header nav a');
 
     window.onscroll = () => {
-
         sections.forEach(sec => {
-
             let top = window.scrollY;
             let offset = sec.offsetTop - 150;
             let height = sec.offsetHeight;
@@ -22,7 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
-            console.log(entry);
             if (entry.isIntersecting) {
                 entry.target.classList.add('show');
             } else {
@@ -33,4 +30,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const hiddenElements = document.querySelectorAll(".hidden");
     hiddenElements.forEach((el) => observer.observe(el));
+
+    const imageObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+            }
+        });
+    });
+
+    const imageElement = document.querySelector('.image-card-pentes');
+    if (imageElement) {
+        imageObserver.observe(imageElement);
+    }
 });

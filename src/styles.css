@@ -145,40 +145,37 @@ section {
     transform: scale(1.05);
 }
 
-.card-wrapper-pentes {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
 .card-pentes {
     display: flex;
     align-items: center;
-    width: 100%;
-    max-width: 140vh;
-    border-radius: 8px;
-    overflow: hidden;
+    justify-content: center;
+    width: 100%; 
 }
 
 .image-wrapper {
-    width: 50%;
+    width: 70%;
+    text-align: center;
+    margin: 2%;
 }
 
 .image-card-pentes {
-    width: 100%;
+    width: 90%;
     height: auto;
-    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease;
+    border: 2px solid #F9E0AE;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
 }
 
-.card-content-pentes {
-    padding: 20px;
-    width: 50%;
+.image-card-pentes.show {
+    opacity: 1;
 }
 
 .paragraph-card-pentes {
     margin: 0;
-    font-size: 16px;
-    color: #2D2424
+    font-size: 1.2rem;
+    color: #2D2424;
 }
 
 .membros-wrapper {
